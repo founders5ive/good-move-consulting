@@ -1,0 +1,3 @@
+import { Footer, Header } from "../components/SiteChrome";
+
+export default function Contact() { return <><Header/><main><section className="contact-wrap"><p className="eyebrow">Contact</p><h1>What is making good work harder than it should be?</h1><p>If your organization is growing, changing, or carrying more operational friction than it can sustain, let’s talk. A first conversation is exploratory—no pitch, no predetermined solution.</p><a className="button" href="mailto:hello@goodmoveconsulting.com">hello@goodmoveconsulting.com <span>↗</span></a><p className="contact-note">Good Move Consulting · Las Vegas, Nevada</p></section></main><Footer/></>; }
