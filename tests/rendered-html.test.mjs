@@ -12,3 +12,18 @@ test("exports the complete static site", async () => {
   assert.match(note,/The Workaround Trap/);
   assert.doesNotMatch(home,/codex-preview|Starter Project/);
 });
+
+test("keeps internal navigation independent of the client-side link runtime", async () => {
+  const files = [
+    "app/components/SiteChrome.tsx",
+    "app/page.tsx",
+    "app/about/page.tsx",
+    "app/how-we-work/page.tsx",
+    "app/field-notes/page.tsx",
+    "app/field-notes/[slug]/page.tsx",
+  ];
+  const sources = await Promise.all(
+    files.map((file) => readFile(new URL(`../${file}`, import.meta.url), "utf8")),
+  );
+  for (const source of sources) assert.doesNotMatch(source, /from ["']next\/link["']/);
+});
