@@ -39,3 +39,11 @@ npm test
 ## Connect goodmoveconsulting.com
 
 After the first Pages deployment, open the project in Cloudflare and choose **Custom domains** → **Set up a custom domain**. Add `goodmoveconsulting.com`, then add `www.goodmoveconsulting.com` and redirect it to the primary domain if desired. If the domain’s DNS is already managed by Cloudflare, Cloudflare can create the required records automatically. Otherwise, follow the DNS records shown on that screen at the current registrar.
+
+## Launch refinement — September 6, 2026
+
+The primary engagement is now `/operations-clarity-sprint`. Major pages direct visitors to `/contact` for a Capability Conversation, requested by email. Confirm that `hello@goodmoveconsulting.com` receives and replies to messages before publishing.
+
+Field Note frontmatter supports an optional `reflection` question. Reading time is calculated from the article. Use `> ` for a pull quote and a `:::workflow` block containing arrow-separated stages for a process diagram. The current portrait is `public/joe-martin.png` and is displayed with a CSS crop on About.
+
+This revision was prepared for launch; publishing and email verification remain separate steps. No fee or delivery timeframe is advertised before the scope is agreed.

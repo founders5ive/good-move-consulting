@@ -2,6 +2,7 @@
 title: The Workaround Trap
 number: "001"
 date: 2026-09-01
+reflection: What workaround inside your organization has quietly become part of the system?
 excerpt: When a workaround keeps the work moving, it can also hide the weakness that made the workaround necessary.
 ---
 
@@ -17,12 +18,18 @@ A successful workaround reduces the immediate pressure to address its cause. The
 
 But the cost has not disappeared. It has moved into someone’s attention, memory, relationships, or extra hours. The organization starts depending on invisible labor while losing sight of the weakness that made that labor necessary.
 
+> The cost has not disappeared. It has moved into someone’s attention, memory, relationships, or extra hours.
+
 Over time, the workaround creates a trap:
 
 - The more reliable the workaround becomes, the less urgent the underlying problem appears.
 - The more the organization depends on it, the riskier it feels to change.
 - The person carrying it becomes indispensable—and overloaded.
 - New tools are layered onto the workaround instead of repairing the work.
+
+:::workflow
+Friction → Compensation → Habit → Process → Culture
+:::
 
 ## A better question
 
