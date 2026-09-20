@@ -61,3 +61,20 @@ footer>div { flex-wrap:wrap; font-size:.875rem; line-height:1.5; }footer small {
 /* Keep each principle sentence together on desktop and balanced on smaller screens. */
 .principle { max-width:40rem; }
 .principle > span { display:block; text-wrap:balance; }
+
+/* Contact: clear choices and a usable fallback when no email app is configured. */
+.contact-intro { padding:80px clamp(24px,8vw,124px) 42px; }
+.contact-intro h1 { font-size:clamp(2.75rem,6vw,5.5rem); max-width:850px; }
+.contact-intro>p:last-child { max-width:740px; font-size:1.125rem; line-height:1.75; }
+.contact-grid { padding:24px clamp(24px,8vw,124px) 90px; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(32px,6vw,90px); align-items:start; }
+.contact-grid h2 { font:400 clamp(1.8rem,3vw,2.6rem)/1.15 Georgia,serif; letter-spacing:-.03em; margin:0 0 20px; }
+.contact-grid p { line-height:1.7; }.contact-primary>p { margin-bottom:28px; }
+.contact-next { padding:32px; background:var(--cream); }.contact-next .eyebrow { margin:0 0 18px; }.contact-next dl { margin:30px 0; }.contact-next dt { font-weight:600; margin:24px 0 8px; }.contact-next dd { margin:0; line-height:1.7; }.contact-location { font-size:.875rem; }
+.email-options { border-top:1px solid var(--line); padding-top:24px; margin-top:32px; }
+.email-options label,.inquiry-form label { display:block; font-size:1rem; font-weight:600; margin-bottom:10px; }
+.email-options input { border:0; border-bottom:1px solid var(--line); width:100%; background:transparent; color:var(--ink); font:1rem/1.6 Arial,sans-serif; padding:10px 0; border-radius:0; }
+.contact-actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:20px 0; }.contact-grid button { cursor:pointer; font-family:inherit; border:1px solid var(--ink); }.copy-email { background:transparent; color:var(--ink); padding:17px 20px; font-size:.875rem; line-height:1.5; }
+.contact-help,.contact-feedback { font-size:.875rem; }.contact-feedback { min-height:1.5em; }.contact-grid :is(button,input,textarea):focus-visible { outline:3px solid #9a6830; outline-offset:4px; }
+.inquiry-form fieldset { border:0; margin:0; padding:0; min-width:0; }.inquiry-form input:not([type=hidden]),.inquiry-form textarea { width:100%; background:#fffdf8; color:var(--ink); font:1rem/1.5 Arial,sans-serif; border:1px solid var(--sage); border-radius:0; padding:12px; margin-bottom:22px; }.inquiry-form textarea { resize:vertical; min-height:140px; }.inquiry-form button:disabled { cursor:default; opacity:.7; }.inquiry-form .contact-help { margin-top:0; }.contact-success { border-left:3px solid var(--sage); padding:14px 18px; background:var(--cream); }.contact-error { color:#842d20; }
+.form-trap { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+@media(max-width:800px) { .contact-intro { padding-top:48px; }.contact-grid { grid-template-columns:1fr; }.contact-next { padding:26px; } }
